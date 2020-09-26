@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo_uit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@layout/my_edit_text_border"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@layout/my_edit_text_border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/capcha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã capcha"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@layout/my_edit_text_border"
+        android:inputType="text"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:button="@null"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:text="I'm not a Robot" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/recaptcha_transparent" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@layout/mybutton"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="Đăng nhập" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Bạn chưa có tài khoản, đăng ký tại đây"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+
+</LinearLayout>
